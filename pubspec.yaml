@@ -1,7 +1,7 @@
 name: taha_effortless_widgets
 description: "These widgets are designed to save time and effort"
 version: 0.0.1
-homepage:
+homepage: https://github.com/tahachic/taha_effortless_widget
 
 environment:
   sdk: '>=3.2.6 <4.0.0'
