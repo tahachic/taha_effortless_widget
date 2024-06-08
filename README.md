@@ -36,7 +36,11 @@ dependencies:
 
 ## Examples
 
-Normal Code with flutter
+We will implement the same design in different two ways
+
+<img src="https://raw.githubusercontent.com/tahachic/taha_effortless_widget/master/example.png" alt="">
+
+1- Normal Code with flutter
 
 ```dart
 
@@ -83,7 +87,7 @@ GestureDetector(
             ),            
 ```
 
-Code using effortless widgets
+2- Code using effortless widgets
 
 ```dart
 
