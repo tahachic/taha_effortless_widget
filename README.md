@@ -36,7 +36,7 @@ dependencies:
 
 ## Examples
 
-We will implement the same design in different two ways
+We will implement this design in two different ways
 
 <img src="https://raw.githubusercontent.com/tahachic/taha_effortless_widget/master/example.png" alt="">
 

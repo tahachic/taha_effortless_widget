@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class VerticalSpace extends StatelessWidget {
-  const VerticalSpace(this.space, {super.key});
+class TVerticalSpace extends StatelessWidget {
+  const TVerticalSpace(this.space, {super.key});
   final double space;
 
   @override

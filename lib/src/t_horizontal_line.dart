@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HorizontalLine extends StatelessWidget {
-  const HorizontalLine({
+class THorizontalLine extends StatelessWidget {
+  const THorizontalLine({
     super.key,
     required this.width,
     this.thickness,
