@@ -4,6 +4,13 @@
 
 `taha_effortless_widgets` is a Flutter package that provides a collection of reusable and customizable widgets to simplify and enhance your Flutter development process. These widgets are designed to save time and effort, allowing you to focus on building great apps.
 
+<table>
+        <tr>
+            <td><img src="https://raw.githubusercontent.com/tahachic/taha_effortless_widget/master/normal.png" alt=""></td>
+            <td><img src="https://raw.githubusercontent.com/tahachic/taha_effortless_widget/master/effortless.png" alt=""></td>
+        </tr>
+</table>
+
 ## Features
 
 - **TButton**: Customizable button with various states (idle, loading, success, fail).
