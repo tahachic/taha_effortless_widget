@@ -38,6 +38,7 @@ class TTextFormField extends StatelessWidget {
     this.maxLength,
     this.maxLines,
     this.textInputAction,
+    this.focusNode,
   });
 
   /// Text Editing Controller
@@ -76,7 +77,7 @@ class TTextFormField extends StatelessWidget {
   /// Color of Form Field Title
   final Color? titleColor;
 
-  /// FontSize of the title default to 20.sp
+  /// FontSize of the title default to 16
   final double? titleSize;
 
   /// FontWeight of the title default to [FontWeight.w300]
@@ -133,6 +134,8 @@ class TTextFormField extends StatelessWidget {
   /// Text input Action default to [TextInputAction.done]
   final TextInputAction? textInputAction;
 
+  /// FocusNode
+  final FocusNode? focusNode;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -165,6 +168,7 @@ class TTextFormField extends StatelessWidget {
             child: TextFormField(
               validator: validator,
               onChanged: onChanged,
+              focusNode: focusNode,
               onEditingComplete: onEditingComplete,
               onFieldSubmitted: onFieldSubmitted,
               textInputAction: textInputAction ?? TextInputAction.done,
@@ -189,7 +193,7 @@ class TTextFormField extends StatelessWidget {
               obscureText: obscureText ?? false,
               keyboardType: keyboardType,
               style: TextStyle(
-                  color: titleColor, fontWeight: FontWeight.w300, fontSize: 20),
+                  color: titleColor, fontWeight: FontWeight.w300, fontSize: 14),
               decoration: InputDecoration(
                 hintText: hint ?? title,
                 hintTextDirection:
@@ -207,7 +211,7 @@ class TTextFormField extends StatelessWidget {
                         : prefix,
                 hintMaxLines: hintMaxLines ?? 2,
                 hintStyle: TextStyle(
-                    fontSize: 18,
+                    fontSize: 14,
                     color: hintColor ??
                         (titleColor != null
                             ? titleColor!.withOpacity(0.2)
@@ -246,9 +250,9 @@ class TTextFormField extends StatelessWidget {
                           ? TextDirection.rtl
                           : TextDirection.ltr,
                       firstTextColor: titleColor,
-                      secondTextSize: titleSize ?? 20,
+                      secondTextSize: titleSize ?? 16,
                       secondTextColor: Colors.deepOrange,
-                      firstTextSize: titleSize ?? 20,
+                      firstTextSize: titleSize ?? 16,
                       textAlign: TextAlign.start,
                       firstTextWeight: titleWeight ?? FontWeight.w300,
                     ),

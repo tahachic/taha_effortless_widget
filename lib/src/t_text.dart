@@ -34,7 +34,7 @@ class TText extends StatelessWidget {
   /// The Text FontFamily default to Application Theme
   final String? fontFamily;
 
-  /// The Text FontSize default 18.0
+  /// The Text FontSize default 14.0
   final double? fontSize;
 
   /// The TextWeight [Bold,Normal,...] default to normal
@@ -74,7 +74,7 @@ class TText extends StatelessWidget {
               : [],
           fontFamily:
               fontFamily ?? DefaultTextStyle.of(context).style.fontFamily,
-          fontSize: fontSize ?? 18,
+          fontSize: fontSize ?? 14,
           fontWeight: textWeight ?? FontWeight.w300,
         ),
       ),
