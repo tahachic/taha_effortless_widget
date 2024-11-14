@@ -21,3 +21,7 @@ improve Ui
 ## 0.0.6 
 
 add focusNode Parameter to TtextFormField
+
+## 0.0.7
+
+adding controllers to widgets

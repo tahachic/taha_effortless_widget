@@ -7,7 +7,11 @@ class TListView extends StatelessWidget {
     required this.length,
     this.separatorBuilder,
     this.isVertical,
+    this.controller,
   });
+
+  /// controller
+  final ScrollController? controller;
 
   /// Item count
   final int length;
@@ -25,6 +29,7 @@ class TListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
       shrinkWrap: true,
+      controller: controller,
       separatorBuilder: separatorBuilder ??
           (context, index) {
             return const Divider(color: Colors.transparent);

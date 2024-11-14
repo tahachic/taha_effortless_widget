@@ -10,7 +10,11 @@ class TGridViewBuilder extends StatelessWidget {
     this.verticalSpacing,
     this.verticalExtent,
     this.childAspectRatio,
+    this.controller,
   });
+
+  /// controller
+  final ScrollController? controller;
 
   /// The GridView [Items] length
   final int length;
@@ -36,6 +40,7 @@ class TGridViewBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      controller: controller,
       physics: const BouncingScrollPhysics(),
       shrinkWrap: true,
       padding: EdgeInsets.zero,
