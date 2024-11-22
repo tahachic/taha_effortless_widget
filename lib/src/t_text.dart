@@ -14,6 +14,10 @@ class TText extends StatelessWidget {
     this.textWeight,
     this.maxWidth,
     this.withShadow = false,
+    this.decorationStyle,
+    this.decoration,
+    this.decorationThickness,
+    this.decorationColor,
   });
 
   /// The Text to be displayed
@@ -49,6 +53,18 @@ class TText extends StatelessWidget {
   /// add shadow behind Text
   final bool? withShadow;
 
+  /// decoration Style
+  final TextDecorationStyle? decorationStyle;
+
+  /// decoration
+  final TextDecoration? decoration;
+
+  /// decorationThickness
+  final double? decorationThickness;
+
+  /// decoration Color
+  final Color? decorationColor;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -61,6 +77,10 @@ class TText extends StatelessWidget {
         textDirection: textDirection,
         style: TextStyle(
           color: color ?? Colors.black,
+          decorationStyle: decorationStyle,
+          decoration: decoration,
+          decorationColor: decorationColor,
+          decorationThickness: decorationThickness,
           shadows: withShadow!
               ? [
                   const BoxShadow(

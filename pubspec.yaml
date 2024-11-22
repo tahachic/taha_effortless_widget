@@ -1,6 +1,6 @@
 name: taha_effortless_widgets
 description: "Taha effortless widgets is a Flutter package that provides a collection of reusable and customizable widgets to simplify and enhance your Flutter development process."
-version: 0.0.7
+version: 0.0.8
 homepage: https://github.com/tahachic/taha_effortless_widget
 
 environment:
